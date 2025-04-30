@@ -8,7 +8,7 @@ pipeline {
     }
     stage ('Checkout SCM') {
       steps {
-        sh 'git clone https://github.com/dasilv-h3/projet-dev01.git'
+        git branch: 'main', credentialsId: '9f643542-c4b4-4e98-8868-7fca8e5feae2', url: 'https://github.com/dasilv-h3/projet-dev01.git'
       }
     }
     stage ('Build image docker') {
