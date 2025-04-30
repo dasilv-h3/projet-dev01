@@ -14,7 +14,6 @@ pipeline {
     stage ('Build image docker') {
       steps {
         script {
-          sh
           sh 'docker build -t myimage_nginx .'
           sh 'docker tag myimage_nginx kevinds:myimage_nginx'
         }
