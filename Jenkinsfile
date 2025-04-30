@@ -8,7 +8,7 @@ pipeline {
     }
     stage ('Checkout SCM') {
       steps {
-        sh 'git clone https://github.com/dasilv-h3/projet-dev01.git
+        sh 'git clone https://github.com/dasilv-h3/projet-dev01.git'
       }
     }
   }
